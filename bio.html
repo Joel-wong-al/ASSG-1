@@ -7,25 +7,42 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/main_picture.png"EVE photo">
-
-    </header>
-
     <main>
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <!-- Menu for links -->
+        <div class="menu hidden">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bio.html">BIO</a></li>
+                <li><a href="discography.html">DISCORGAPHY</a></li>
+                <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                <li><a href="merch.html">MERCH</a></li>
+                <li><a href="concert.html">CONCERT</a></li>
+            </ul>
+        </div>
+        <header>
+            <img src="assets/main_picture.png"EVE photo">
+    
+        </header>
         <div class="bio-container">
             <h1><span class="bio">BIO</span></h1>
             <div class="about-eve">
                 <p>Eve is a Japanese singer-songwriter and Vocaloid producer, born on May 23, 1995. Initially using the stage names Keitora (けいとら) and Kurowa (クロわ), he later adopted the name Eve. He is known for his unique musical style that blends various genres, including rock, pop, and electronic influences. Eve's popularity surged after his involvement in the Vocaloid community, where he produced songs featuring Vocaloid characters before launching his solo career. He is signed under Toy's Factory, a major Japanese record label.</p>
-                <img src="assets/BIO (first pic).webp" alt="picture of eve singing">
+                <img src="assets/BIO/BIO (first pic).webp" alt="picture of eve singing">
             </div>
             <div class="music-type">
                 <p>Eve's music is often associated with his distinctive, emotionally charged lyrics and his collaboration with various artists. His songs have been featured in numerous anime series, such as "Jujutsu Kaisen" and "My Hero Academia," which helped expand his fanbase beyond Japan. Some of his hit singles include "Kaikai Kitan" (the opening theme for Jujutsu Kaisen) and "Bokurano" (from My Hero Academia).</p>
-                <img src="assets/BIO(second para pic).png" alt="eve song full of colours">
+                <img src="assets/BIO/BIO(second para pic).png" alt="eve song full of colours">
             </div>
             <div class="Bio-manga">
                 <p>In addition to music, Eve has branched into other creative fields, including publishing a manga called Kara no Kioku and writing a light novel, How to Eat Life. He also has a clothing line, Harapeco Store, and engages with fans on platforms like YouTube and TikTok​.</p>
-                <img src="assets/Manga.png" alt="Image of his manga">
+                <img src="assets/BIO/Manga.png" alt="Image of his manga">
             </div>
         
         </div>
@@ -35,6 +52,7 @@
             <p>© Eve Official | <a href="mailto:contact@eve-music.jp" style="color: #f39c12; text-decoration: none;">Contact</a></p>
         </div>
     </footer>
+    <script src="java.js"></script>
 
 </body>
 </html>
