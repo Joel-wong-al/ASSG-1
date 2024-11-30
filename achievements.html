@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/main_picture.png"EVE photo">
-    </header>
     <main>
-        <div class="achievements-container">
-            <h2><span class="achievements">ACHIEVEMENTS</span></h2>
-            <div class="achievement_1">
-                <img src="assets/Smile_album.png" alt="Eve simle album">
-                <p>Eve's album Smile, released on February 12, 2020, demonstrated significant commercial success in Japan. It achieved a peak position of #2 on the Oricon Weekly Albums Chart, further establishing Eve as a prominent figure in the Japanese music scene. The album featured a blend of his unique sound and lyrical depth, earning accolades from fans and critics alike. The tracks in Smile encapsulate Eve's storytelling prowess, with many songs gaining popularity through their use in animations and media​</p>
-
-            </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+        
+        <!-- Menu for links -->
+        <div class="menu hidden">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bio.html">BIO</a></li>
+                <li><a href="discography.html">DISCOGRAPHY</a></li>
+                <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                <li><a href="merch.html">MERCH</a></li>
+                <li><a href="concert.html">CONCERT</a></li>
+            </ul>
+        </div>
+        <header>
+            <img src="assets/main_picture.png"EVE photo">
+        </header>
+        
+            <div class="achievements-container">
+                <h2><span class="achievements">ACHIEVEMENTS</span></h2>
+                <div class="achievement_1">
+                    <img src="assets/Smile_album.png" alt="Eve simle album">
+                    <p>Eve's album Smile, released on February 12, 2020, demonstrated significant commercial success in Japan. It achieved a peak position of #2 on the Oricon Weekly Albums Chart, further establishing Eve as a prominent figure in the Japanese music scene. The album featured a blend of his unique sound and lyrical depth, earning accolades from fans and critics alike. The tracks in Smile encapsulate Eve's storytelling prowess, with many songs gaining popularity through their use in animations and media​</p>
+
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footer-container">
             <p>© Eve Official | <a href="mailto:contact@eve-music.jp" style="color: #f39c12; text-decoration: none;">Contact</a></p>
         </div>
     </footer>
-    
+    <script src="java.js"></script>
 </body>
 </html>
