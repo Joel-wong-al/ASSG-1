@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header img {
   margin: 20px auto;
   width: 150px;
@@ -14,14 +15,35 @@ header img {
   display: block;
   border-radius: 0; 
 }
-/* Main Picutre */
+
 .main_picture {
   display: block;
+  margin: 0 auto;
   justify-content: center;
   align-items: center; 
-  width: 70%; /* Scale image down */
+  width: 70%;
   max-width: 100%;
   height: auto;
+}
+
+/* General styling for all h1 tags */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px auto;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Specific styling for h1 with the text "EVE" */
+h1.eve-heading {
+  font-size: 100px; /* Keep its unique size */
+  text-align: center; /* Position remains centered */
+  text-transform: uppercase;
+  margin: 20px auto;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Background Section */
@@ -29,8 +51,8 @@ header img {
   background-image: url(../assets/Page_one/EVE_singing.png);
   background-size: cover;
   background-position: center;
-  height: 75vh; /* Full viewport height */
-  width: 100%; /* Full viewport width */
+  height: 75vh; 
+  width: 100%; 
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   padding: 50px 0;
@@ -52,7 +74,7 @@ header img {
 }
 
 .links nav ul li {
-  margin: 0 100px; /* Space between links */
+  margin: 0 100px; 
 }
 
 .links nav ul li a {
@@ -132,14 +154,14 @@ header img {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
   width: 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(100%); /* Hidden by default */
+  transform: translateX(100%); 
   transition: transform 0.3s ease;
   z-index: 999;
 }
@@ -161,7 +183,7 @@ header img {
 }
 
 .menu.active {
-  transform: translateX(0); /* Reveal menu */
+  transform: translateX(0); 
 }
 
 /* Highlight menu icon when active */
@@ -172,11 +194,11 @@ header img {
 /* Responsive Design */
 @media (max-width: 768px) {
   .content-container h1 {
-      font-size: 50px; /* Adjust for smaller screens */
+      font-size: 50px; 
   }
 
   .links nav ul li {
-      margin: 0 20px; /* Reduce spacing between links */
+      margin: 0 20px; 
   }
 
   .links nav ul li a {
@@ -200,31 +222,23 @@ header img {
   text-align: center; 
   color: #fff; 
   position: relative;
-  z-index: 1; /* Ensure the text is above the background */
+  z-index: 1; /
 }
 
-/* Optional: to add some spacing between the h1 and the next section */
 .bio-container {
-  margin-top: 20px; /* Adjust this based on your layout */
+  margin-top: 20px; 
 }
 .bio-container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  background-color: transparent; /* Keep it transparent for a cleaner look */
-  color: white; /* Ensure text is readable */
-  border-radius: 10px; /* Optional: Keep rounded corners */
-  box-shadow: none; /* Remove shadow for a cleaner look */
+  background-color: transparent; 
+  color: white; 
+  border-radius: 10px; 
+  box-shadow: none;
 }
 
-.bio-container h1 {
-  text-align: center;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: white; /* Keep the title readable */
-  margin-bottom: 30px;
-  background-color: transparent; /* Ensure no background is applied to h1 */
-}
+
 
 /* Section Layout */
 .about-eve,
@@ -253,7 +267,7 @@ header img {
   width: 50%;
   font-size: 18px;
   line-height: 1.6;
-  color: white; /* Adjust text to match the dark theme */
+  color: white; 
   text-align: justify;
 }
 
@@ -301,13 +315,44 @@ header img {
       font-size: 30px;
   }
 }
-/* Concert */
-/* Header H1 Styling */
+/* Achievements Section */
+.achievements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.achievement_1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.achievement_1 img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.achievement_1 p {
+  flex: 1;
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  margin: 0;
+}
 
 
 /* Concert Container */
 .concert-container {
-  max-width: 1000px; /* Spread the content wider */
+  max-width: 1000px; 
   margin: 0 auto;
   padding: 20px;
 }
@@ -323,7 +368,7 @@ header img {
 }
 
 .event:last-child {
-  border-bottom: none; /* Remove border for the last event */
+  border-bottom: none; 
 }
 
 /* Event Title */
@@ -364,10 +409,7 @@ section.discography {
   padding: 20px 0;
 }
 
-section.discography h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+
 
 /* Album Grid */
 .album-grid {
@@ -399,4 +441,57 @@ section.discography h1 {
   font-size: 14px;
   font-weight: bold;
   margin-top: 5px;
+}
+
+
+
+/* Merch Section */
+.merch-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.merch-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.merch-item {
+  flex: 0 0 calc(33.33% - 20px); 
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.merch-item img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.merch-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.merch-price {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.merch-description {
+  font-size: 14px;
+  color: #666;
 }
